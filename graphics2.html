@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head> SVG File Shapes
+	<title> Advanced Shapes </title>
+</head>
+
+<body>
+	<h1> First Advanced Shape </h1>
+		<h3> Star </h3>
+			<svg width='250' height='200'>
+				<polygon points='100,10,40,198,190,78,10,78,160,198' 
+				fill='lightblue' stroke='purple' />
+			</svg> <hr>
+	<!-- Create a star with less than 5 points and a different color -->
+	<h3> Star 2 </h3>
+		<svg width='400' height='200'>
+				<polygon points='100,10,40,198,190,50,10,50,160,198,10,200' 
+				fill='brown' stroke='grey' />
+			</svg> <hr>
+	
+	<h3> STOP Sign </h3>
+		<svg width='400' height='120'>
+			<polygon points='40,13,80,13,110,40,110,80,80,110,40,110,13,80,13,40'
+			fill='red' stroke='black'/>
+			<text x='37' y='65' font-size='20px' fill='white'> STOP </text>
+		</svg> <hr>
+			
+	<h3> Diagonal Line </h3>
+		<svg width='400' height='120'>
+			<line points='x1='0' y1='0' x2='50' y2='100' 
+			stroke='grey' />
+			
+			<line points='x1='0' y1='0' x2='50' y2='500' 
+			stroke='purple' />
+	
+	<h3> Straight Line </h3>
+		<svg width='400' height='120'>
+			<line points='x1='0' y1='0' x2='0' y2='100' 
+			stroke='grey' />
+			
+			<line points='x1='0' y1='0' x2='100' y2='0' 
+			stroke='grey' />
+			
+	<h3> Color Gradient Star </h3>
+			<svg width='250' height='200'>
+				<polygon points='100,10,40,198,190,78,10,78,160,198' 
+				fill='url(#s1)' stroke='black' />
+				<defs>
+					<linearGradient id='s1' x1='0%' y1='0%' x2='100%' y2='0%'>
+					<stop offset='0%' style='stop-color:yellow;' />
+					<stop offset='100%' style='stop-color:red;' />
+					</linearGradient>
+				</defs>
+			</svg> <hr>
+</body>
+</html>
