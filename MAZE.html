@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<h1> HTML5 Canvas </h1>
+	<h2> Maze </h2>
+	
+	<canvas id='myCanvas' width='400' height='400' style='border: 1px solid black;'>
+	</canvas>
+	
+	<script> 
+		const canvas = document.getElementById('myCanvas');
+		const ctx = canvas.getContext('2d');
+		
+		ctx.beginPath();
+		ctx.moveTo(150,0);
+		ctx.lineTo(150,300);
+		ctx.lineTo(225,300);
+		ctx.lineTo(225,75);
+		ctx.lineTo(350,75);
+		ctx.stroke();
+		
+		ctx.beginPath();
+		ctx.moveTo(350,400);
+		ctx.lineTo(350,300);
+		ctx.stroke();
+		
+		ctx.beginPath();
+		ctx.moveTo(275,400);
+		ctx.lineTo(275,200);
+		ctx.lineTo(350,200);
+		ctx.lineTo(350,150);
+		ctx.lineTo(275,150);
+		ctx.stroke();
+		
+		ctx.beginPath();
+		ctx.moveTo(150,300);
+		ctx.lineTo(75,300);
+		ctx.lineTo(75,75);
+		ctx.stroke();
+		
+		ctx.beginPath();
+		ctx.moveTo(0,0);
+		ctx.lineTo(0,100);
+		ctx.strokeStyle= 'blue';
+		ctx.stroke();
+		
+		ctx.beginPath();
+		ctx.moveTo(375,400);
+		ctx.lineTo(300,400);
+		ctx.strokeStyle= 'red';
+		ctx.stroke();
+	</script>
+		
+	</body>
+</html>
